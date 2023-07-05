@@ -6,14 +6,14 @@ import { AiOutlineSearch } from 'react-icons/ai';
 
 function Nav(props) {
   return (
-    <div className="flex justify-between space-x-40 p-4 bg-slate-300">
-      <h1 className="text-3xl">Enochbook</h1>
+    <div className="flex justify-between space-x-40 p-4 sticky">
+      <h1 className="text-3xl md:text-xl">Enochbook</h1>
 
       <input
         type="search"
         name="search"
         placeholder="Search Enochbook"
-        className="w-80 sm:w-50 md:w-60 lg:w-80 rounded-md bg-slate-100"
+        className="w-80 sm:w-50 md:w-40 lg:w-80 rounded-md bg-slate-100"
       />
 
       <section className="flex space-x-5">

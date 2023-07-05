@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://copypastemaster.github.io/portfolio-website",
+  "homepage": "https://copypastemaster.github.io/enochbook",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

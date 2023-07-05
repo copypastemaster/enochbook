@@ -55,7 +55,7 @@ function Sidebar(props) {
 
 function Content(props) {
   return (
-    <section className="flex space-x-4">
+    <section className="flex space-x-4 hover:bg-slate-500 p-2 rounded-md">
       {props.icon}
       <p className="text-sm"> {props.text}</p>
     </section>
