@@ -1,0 +1,28 @@
+import React from 'react';
+import { RiMessengerLine } from 'react-icons/ri';
+import { IoMdNotificationsOutline } from 'react-icons/io';
+import { BiSolidUserCircle } from 'react-icons/bi';
+import { AiOutlineSearch } from 'react-icons/ai';
+
+function Nav(props) {
+  return (
+    <div className="flex justify-between space-x-40 p-4 bg-slate-300">
+      <h1 className="text-3xl">Enochbook</h1>
+
+      <input
+        type="search"
+        name="search"
+        placeholder="Search Enochbook"
+        className="w-80 sm:w-50 md:w-60 lg:w-80 rounded-md bg-slate-100"
+      />
+
+      <section className="flex space-x-5">
+        <RiMessengerLine size={25} />
+        <IoMdNotificationsOutline size={25} />
+        <BiSolidUserCircle size={25} />
+      </section>
+    </div>
+  );
+}
+
+export default Nav;
