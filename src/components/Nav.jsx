@@ -13,7 +13,7 @@ function Nav(props) {
         type="search"
         name="search"
         placeholder="Search Enochbook"
-        className="w-80 sm:w-50 md:w-40 lg:w-80 rounded-md bg-slate-100"
+        className="w-100 sm:w-50 md:w-40 lg:w-80 rounded-md bg-slate-100"
       />
 
       <section className="flex space-x-5">

@@ -21,11 +21,11 @@ function Sidebar(props) {
     <div className="flex-column max-w-xs space-y-4 mx-1 my-3 bg-slate-200 rounded-xl p-5 max-h-screen">
       <Content icon={<AiFillHome size={18} />} text={'Home'} />
       <Content icon={<BiUser size={18} />} text={'Enoch Binas'} />
-      <hr />
+      <hr style={{ borderColor: 'black' }} />
       <Content icon={<DiBootstrap />} text={'Bootstrap'} />
       <Content icon={<DiCss3 />} text={'Css'} />
       <Content icon={<DiDatabase />} text={'Database'} />
-      <hr />
+      <hr style={{ borderColor: 'black' }} />
       <Content icon={<DiCodeigniter />} text={'CodeIgniter'} />
       <Content icon={<DiJsBadge />} text={'Javascript'} />
       <Content icon={<DiAngularSimple />} text={'Angular'} />
@@ -35,7 +35,7 @@ function Sidebar(props) {
       <br />
       <br />
       <br />
-      <hr />
+      <hr style={{ borderColor: 'black' }} />
       <section className="flex justify-between">
         <a href="https://github.com/copypastemaster">
           <AiFillGithub size={30} />
