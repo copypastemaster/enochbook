@@ -18,7 +18,7 @@ import {
 
 function Sidebar(props) {
   return (
-    <div className="flex-column max-w-xs space-y-4 mx-1 my-3 bg-slate-100 rounded-xl p-5 max-h-screen">
+    <div className="flex-column max-w-xs space-y-4 mx-1 my-3 bg-slate-200 rounded-xl p-5 max-h-screen">
       <Content icon={<AiFillHome size={18} />} text={'Home'} />
       <Content icon={<BiUser size={18} />} text={'Enoch Binas'} />
       <hr />
