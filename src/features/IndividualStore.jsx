@@ -6,7 +6,13 @@ export const individualSlice = createSlice({
   initialState: {
     value: people,
   },
-  reducers: {},
+  reducers: {
+    test: (state, action) => {
+      // console.log(action.payload);
+      console.log(state);
+    },
+  },
 });
 
+export const { test } = individualSlice.actions;
 export default individualSlice.reducer;

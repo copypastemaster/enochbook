@@ -33,7 +33,7 @@ function Main(props) {
       <section className="bg-slate-100 rounded-md p-4">
         <OnYourMind />
       </section>
-      <section>
+      <section className="flex-column space-y-3">
         <Posts />
       </section>
     </div>
