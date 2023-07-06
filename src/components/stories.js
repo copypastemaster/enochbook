@@ -9,25 +9,30 @@ export const people = [
     id: 0,
     name: 'Carla',
     img: girl1,
+    post: 'Bat malungkot ang beshy ko',
   },
   {
     id: 1,
     name: 'Jian',
     img: girl2,
+    post: 'Kase malungkot ang lola mo',
   },
   {
     id: 2,
     name: 'Rj',
     img: boy1,
+    post: 'G dotes?',
   },
   {
     id: 3,
     name: 'Mark',
     img: boy2,
+    post: 'Bakit nya ko iniwan?',
   },
   {
     id: 4,
     name: 'Ives',
     img: boy3,
+    post: 'Dalawa mukha ko',
   },
 ];
