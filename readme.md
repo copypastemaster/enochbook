@@ -8,7 +8,9 @@
 
 - React JS
 - Tailwind CSS
+- Redux/rtk -used for practice, and future functionalities of individuals.
 
 ## To add:
 
-- Pages
+- Individual pages
+- Group pages
