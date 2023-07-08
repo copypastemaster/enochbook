@@ -4,6 +4,7 @@ import { HiOutlineVideoCamera } from 'react-icons/hi';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { BiDotsHorizontal } from 'react-icons/bi';
 import { people } from './stories';
+import * as Avatar from '@radix-ui/react-avatar'
 
 function Friends(props) {
   return (
@@ -41,11 +42,14 @@ function OnlineFriends(props) {
             className="flex gap-3 space-x-5 space-y-1 hover:bg-slate-400 rounded-xl p-2"
             key={persons.id}
           >
-            <img
+            <Avatar.Root>
+            
+            <Avatar.Image
               src={persons.img}
-              className="w-100 max-w-sm height-100 max-h-7 rounded-md"
+              className="w-100 max-w-sm height-100 max-h-7 rounded-3xl"
             />
-            <p className="text-xs">{persons.name}</p>
+             </Avatar.Root>
+            <p className="text-sm">{persons.name}</p>
           </div>
         );
       })}

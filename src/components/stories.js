@@ -13,7 +13,7 @@ export const people = [
   },
   {
     id: 1,
-    name: 'Jian',
+    name: 'Jian ',
     img: girl2,
     post: 'Kase malungkot ang lola mo',
   },

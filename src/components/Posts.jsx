@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { test } from '../features/IndividualStore';
 import { AiOutlineUser } from 'react-icons/ai';
+import * as Avatar from '@radix-ui/react-avatar'
 
 function Posts(props) {
   const individual = useSelector((state) => state.individual.value);
@@ -19,10 +20,12 @@ function Posts(props) {
           >
             <div className="flex  justify-between">
               <section className="flex space-x-3">
-                <img
-                  src={person.img}
-                  className="w-100 max-w-sm h-100 max-h-12 rounded-full"
-                />
+                <Avatar.Root>
+                  <Avatar.Image
+                    src={person.img}
+                    className="w-100 max-w-sm h-100 max-h-12 rounded-full"
+                  />
+                </Avatar.Root>
                 <div>
                   <h1>{person.name}</h1>
                   <span className="text-xs">5 min</span>
