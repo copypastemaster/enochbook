@@ -15,12 +15,18 @@ import {
   DiCss3,
   DiDatabase,
 } from 'react-icons/di';
+import { Link } from 'react-router-dom';
 
 function Sidebar(props) {
   return (
     <div className="flex-column max-w-xs space-y-4 mx-1 my-3 bg-slate-200 rounded-xl p-5 max-h-screen">
-      <Content icon={<AiFillHome size={18} />} text={'Home'} />
-      <Content icon={<BiUser size={18} />} text={'Enoch Binas'} />
+      <Link to="/enochbook">
+       <Content icon={<AiFillHome size={18} />} text={'Home'} />
+      </Link>
+      
+      <Link to="/ProfileCreator">
+        <Content icon={<BiUser size={18} />} text={'Enoch Binas'} />
+      </Link>
       <hr style={{ borderColor: 'black' }} />
       <Content icon={<DiBootstrap />} text={'Bootstrap'} />
       <Content icon={<DiCss3 />} text={'Css'} />

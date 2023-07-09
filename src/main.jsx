@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import individualReducer from './features/IndividualStore';
+import {ChakraProvider} from '@chakra-ui/react'
 
 const store = configureStore({
   reducer: {
@@ -17,7 +18,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
-        <App />
+        <ChakraProvider>
+          <App />
+        </ChakraProvider>
       </Provider>
     </BrowserRouter>
   </React.StrictMode>

@@ -5,6 +5,7 @@ import { BiSolidUserCircle } from 'react-icons/bi';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { people } from './stories';
 import * as Dropdown from '@radix-ui/react-dropdown-menu'
+import { Link } from 'react-router-dom';
 
 function Nav(props) {
   const [selectedPerson, setSelectedPerson] = React.useState('')
@@ -12,7 +13,7 @@ function Nav(props) {
 
   return (
     <div className="flex justify-between space-x-40 p-3 sticky">
-      <h1 className="text-3xl md:text-xl">Enochbook</h1>
+      <Link to="/enochbook"><h1 className="text-3xl md:text-xl">Enochbook</h1></Link>
       
       <Dropdown.Root>
 
