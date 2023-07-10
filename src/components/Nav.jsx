@@ -6,6 +6,9 @@ import { AiOutlineSearch } from 'react-icons/ai';
 import { people } from './stories';
 import * as Dropdown from '@radix-ui/react-dropdown-menu'
 import { Link } from 'react-router-dom';
+import { Avatar } from '@chakra-ui/react';
+
+let profile = people.find((person) => person.id === 0)
 
 function Nav(props) {
   const [selectedPerson, setSelectedPerson] = React.useState('')
@@ -33,13 +36,15 @@ function Nav(props) {
             
               {people.map((person) => {
                 return(
-                  <Dropdown.Item key={person.id} 
-                                 className='flex gap-6 hover:bg-slate-300 rounded-md p-2'
-                                 onClick={() => test(person.name)}>
-                    <img src={person.img}
-                        className='w-100 h-100 max-w-sm max-h-7 rounded-3xl'/>
-                    <h1>{person.name}</h1>   
-                  </Dropdown.Item>
+                  <Link to={person.link}>
+                    <Dropdown.Item key={person.id} 
+                                  className='flex gap-6 hover:bg-slate-300 rounded-md p-2'
+                                  onClick={() => test(person.name)}>
+                      <img src={person.img}
+                          className='w-100 h-100 max-w-sm max-h-7 rounded-3xl'/>
+                      <h1>{person.name}</h1>                                
+                    </Dropdown.Item>
+                  </Link>   
                 )   
               })}
             
@@ -49,9 +54,12 @@ function Nav(props) {
       </Dropdown.Root>
 
       <section className="flex space-x-5">
-        <RiMessengerLine size={25} />
-        <IoMdNotificationsOutline size={25} />
-        <BiSolidUserCircle size={25} />
+        <RiMessengerLine size={30} />
+        <IoMdNotificationsOutline size={30} />
+        {/* <BiSolidUserCircle size={25} /> */}
+        <Link to="/User">
+          <Avatar src={profile.img} size='sm'/>
+        </Link>
       </section>
     </div>
   );

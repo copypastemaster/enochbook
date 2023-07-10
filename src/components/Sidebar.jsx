@@ -24,7 +24,7 @@ function Sidebar(props) {
        <Content icon={<AiFillHome size={18} />} text={'Home'} />
       </Link>
       
-      <Link to="/ProfileCreator">
+      <Link to="/User">
         <Content icon={<BiUser size={18} />} text={'Enoch Binas'} />
       </Link>
       <hr style={{ borderColor: 'black' }} />

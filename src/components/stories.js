@@ -16,18 +16,22 @@ import userbg from '../components/individuals/userbackground.avif'
 export const people = [
   {
     id: 0,
-    name: 'Carla',
-    img: girl1,
-    post: 'Bat malungkot ang beshy ko',
-    background: background1,
+    name: 'User',
+    img: userimg,
+    post: "Hello? Im under d water. Please help me. It's too much raining uhuhuhu",
+    background: userbg,
+    link: '/User',
+    intro: "Wanna make some money? You know how ;)"
   },
+ 
   {
     id: 1,
     name: 'Jian ',
     img: girl2,
     post: 'Kase malungkot ang lola mo',
     background: background2,
-
+    link: '/Jian',
+    intro: 'Bad beech'
   },
   {
     id: 2,
@@ -35,7 +39,8 @@ export const people = [
     img: boy1,
     post: 'G dotes?',
     background: background3,
-
+    link: '/Rj',
+    intro: "Ako'y lato lato"
   },
   {
     id: 3,
@@ -43,20 +48,18 @@ export const people = [
     img: boy2,
     post: 'Bakit nya ko iniwan?',
     background: background4,
-
+    link: '/Mark',
+    intro: 'Ako budoy'
   },
   {
     id: 4,
-    name: 'Ives',
-    img: boy3,
-    post: 'Dalawa mukha ko',
-    background: background5,
+    name: 'Carla',
+    img: girl1,
+    post: 'Bat malungkot ang beshy ko',
+    background: background1,
+    link: '/Carla',
+    intro: 'Pansinin mo na ko'
   },
-  {
-    id: 5,
-    name: 'User',
-    img: userimg,
-    post: "Hello? Im under d water. Please help me. It's too much raining uhuhuhu",
-    background: userbg
-  }
+ 
+ 
 ];
