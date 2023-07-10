@@ -18,6 +18,7 @@
 ## To add:
 - CRUD
 - Group pages
+- responsiveness
 
 ### side note:
 -  Microsoft edge doesn't suport avif extension. Run the live demo on chrome/firefox.
