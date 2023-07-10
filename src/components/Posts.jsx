@@ -48,8 +48,10 @@ function Posts(props) {
               <h5 className="text-sm hover:bg-slate-400">Comment</h5>
             </div>
             <hr style={{ borderColor: 'black' }} />
-            <div className="flex gap-1">
-              <AiOutlineUser size={25} />
+            <div className="flex gap-2">
+              {/* <AiOutlineUser size={25} />
+               */}
+               <Avatar src={person.commentImg} size='sm'/>
               <input
                 type="text"
                 placeholder="Write a comment"
